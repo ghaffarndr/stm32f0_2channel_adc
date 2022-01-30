@@ -34,6 +34,7 @@ int main()
 	  val1 = ADC1->DR;		         	 //Store the ADC conversion result
 		ADC1->CR |=  (1<<4);           // stop conversion
     delay(100000);
+			
 		ADC1->CHSELR =0x00;	
   	ADC1->CHSELR |= (1<<6);
 	  ADC1->CR |=  (1<<2);           // Trigger a conversion
